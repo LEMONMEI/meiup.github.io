@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
   <!-- Sidebar文件夹样式 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+<!-- 引入 gitalk留言功能样式表 -->
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+
+
 </head>
 
 <body>
@@ -87,7 +91,20 @@
   <!--字数统计-->
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <!--卜蒜子访问统计-->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- 引入 gitalk留言功能 -->
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '8e4dee84038818b3a5f9',
+    clientSecret: 'c6333bde1ccfc90c7ad1ede2d2d7127c2fe5e4c1',
+    repo: 'https://github.com/LEMONMEI/meiup.github.io.git', // 存放评论的仓库
+    owner: 'LEMONMEI', // 仓库的创建者
+    // admin: ['XXXXX'], // 如果仓库有多个人可以操作，那么在这里以数组形式写出
+    id: location.pathname, // 用于标记评论是哪个页面的
+  })
+</script>
 
   <!-- 代码高亮js包 -->
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-python.js"></script>
