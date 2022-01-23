@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LEMONMEI</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- 设置浏览器图标 -->
+  <link rel="icon" href="./images/icon/PaperCranes.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/./images/icon/PaperCranes.ico" type="image/x-icon" />
+
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- Sidebar箭头样式 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+  <!-- Sidebar文件夹样式 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+</head>
+
+<body>
+  <div id="app">
+    Loading......
+  </div>
+  <script>
+    window.$docsify = {
+      name: 'LEMONMEI',
+      repo: '',
+      loadNavbar: true,//开启导航栏，不设置指定文件，默认打开_navbar.md
+      loadSidebar: true,//开启侧边栏，方法方式与导航栏相同
+      subMaxLevel: 7,
+      sidebarDisplayLevel: 2,  // 设置侧边栏显示级别
+      // autoHeader: true,//根据侧边栏目录为页面添加标题 
+      // //上面这里有个BUG：如果采用自动添加标题，name从主页使用超链接跳转过去的页面仍然是在主页界面显示的，且默认标题为主页标题
+      subMaxLevel: 3,//设置最大生成目录等级
+      auto2top: true,//切换内容后自动跳到页面顶部
+      coverpage: true,//开启封面      
+      onlyCover: true,//只有首页才会加载封面
+
+      // 搜索框配置参数
+      search: {
+        maxAge: 86400000,               // 过期时间，单位毫秒，默认一天
+        paths: [],                      // or 'auto'，匹配文件路径
+        placeholder: 'Type to search',  // 搜索提示框文字， 支持本地化，例子在下面
+        // placeholder: {
+        //   '/zh-cn/': '搜索',
+        //   '/': 'Type to search'
+        // },
+        noData: 'No Results!',          // 找不到结果文字提示，支持本地化，例子在下面
+        // noData: {
+        //   '/zh-cn/': '找不到结果',
+        //   '/': 'No Results'
+        // },
+        depth: 6,                       // 搜索标题的最大程级, 1 - 6
+      }
+
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!--复制功能js——添加一个简单的复制按钮，允许代码一键复制-->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <!-- Sidebar折叠插件 -->
+  <script src=" //cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js "> </script>
+  <!-- 搜索框插件 -->
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+
+
+  <!-- 代码高亮js包 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-python.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-visual-basic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-java.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-javascript.js"></script>
+
+
+
+
+</body>
+
+</html>
